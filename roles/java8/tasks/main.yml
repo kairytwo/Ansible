@@ -1,0 +1,13 @@
+---
+# tasks file for java
+
+- name: Install  Java 8
+  yum:
+    name: java-1.8.0-openjdk
+    state: present
+
+- name: Set java 8 to default
+  alternatives:
+    name: java
+    path: /usr/lib/jvm/jre-1.8.0-openjdk.x86_64/bin/java
+
