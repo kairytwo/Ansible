@@ -3,4 +3,4 @@
 
 - name: Installs and starts the AWS CodeDeploy Agent
   aws_codedeploy:
-    enabled: True
+    enabled: yes
